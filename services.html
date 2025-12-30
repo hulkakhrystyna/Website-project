@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EliteStay Services</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="services-hero">
+        <nav class="navbar">
+            <a href="index.html"><img class="logo" src="assets/icons/logo.svg" /></a>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="properties.html">Our Properties</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+              &#9776;
+            </div>
+          </nav>
+            <h1 class="services-title">Services</h1>
+    </header>
+    <main>
+        <section class="plans-section">
+            <h2 class="plans-section-title">Our Servive Plans</h2>
+            <div class="plans-container">
+                <div class="standart-card">
+                    <h3 class="standart-procent">18%</h3>
+                    <h3 class="plan-name">Standart Plan</h3>
+                    <ul class="plan-service">
+                        <li>Listing creation</li>
+                        <li>Pricing optimisation</li>
+                        <li>Guest communication</li>
+                        <li>Cleaning & laundry</li>
+                        <li>Check-in coordination</li>
+                        <li>Smart lock setup</li>
+                    </ul>
+                    <a href="contact.html" class="standart-link">CHOOSE PLAN</a>
+                </div>
+                <div class="premium-card">
+                    <h3 class="premium-procent">30%</h3>
+                    <h3 class="plan-name">Premium Plan</h3>
+                    <ul class="plan-service">
+                        <li>Everything from Standard</li>
+                        <li>Airport pickup</li>
+                        <li>Mid-stay cleaning</li>
+                        <li>Guest screening</li>
+                        <li>Noise monitoring</li>
+                        <li>Interior styling</li>
+                        <li>Priority repairs</li>
+                    </ul>
+                    <a href="contact.html" class="premium-link">CHOOSE PLAN</a>
+                </div>
+            </div>
+        </section>
+        <section class="workflow-section">
+            <h2>How it Works</h2>
+            <div class="workflow-container">
+                <div class="workflow-card">
+                    <div class="workflow-name-wrap">
+                        <h3 class="workflow-step">1</h3>
+                        <h3 class="workflow-name">Property Onboarding</h3>
+                    </div>
+                    <hr class="workflow-underline">
+                    <p>Professional photography, listing setup, safety checks, and pricing strategy.</p>
+                </div>
+                <div class="workflow-card">
+                    <div class="workflow-name-wrap">
+                        <h3 class="workflow-step">2</h3>
+                        <h3 class="workflow-name">Your Listing Goes Live</h3>
+                    </div>
+                    <hr class="workflow-underline">
+                    <p>Your home is published on Airbnb and other platforms, fully optimised.</p>
+                </div>
+                <div class="workflow-card">
+                    <div class="workflow-name-wrap">
+                        <h3 class="workflow-step">3</h3>
+                        <h3 class="workflow-name">Guest Bookings</h3>
+                    </div>
+                    <hr class="workflow-underline">
+                    <p>We manage guest messaging, screening, check-ins, and support.</p>
+                </div>
+                <div class="workflow-card">
+                    <div class="workflow-name-wrap">
+                        <h3 class="workflow-step">4</h3>
+                        <h3 class="workflow-name">Stay & Cleaning</h3>
+                    </div>
+                    <hr class="workflow-underline">
+                    <p>Guests enjoy a smooth stay; cleaners reset the home for the next booking.</p>
+                </div>
+                <div class="workflow-card">
+                    <div class="workflow-name-wrap">
+                        <h3 class="workflow-step">5</h3>
+                        <h3 class="workflow-name">Monthly Payouts</h3>
+                    </div>
+                    <hr class="workflow-underline">
+                    <p>You receive clear, transparent earnings reports every month.</p>
+                </div>
+            </div>
+        </section>
+        <section class="calculator-section" id="calculator">
+            <h2 class="calculator-title">Earnings Calculator</h2>
+            <p>Estimate your potential monthly income</p>
+            <form class="calculator-form" id="calculatorForm">
+              <label class="calculator-label">
+                Nightly Rate (£)
+                <input class="calculator-input-number" type="number" id="rate" required>
+              </label>
+              <label class="calculator-label">
+                Occupancy Rate (%)
+                <input class="calculator-input-number" type="number" id="occupancy" required>
+              </label>
+              <p>Choose Plan:</p>
+              <label class="calculator-label">
+                <input type="radio" name="plan" value="0.18" checked>
+                Standard (18%)
+              </label>
+              <label class="calculator-label">
+                <input type="radio" name="plan" value="0.30">
+                Prestige (30%)
+              </label>
+              <button class="calculator-button" type="button" id="calculateBtn">Calculate</button>
+            </form>
+            <div class="results">
+              <p>Gross: £<span id="gross">0</span></p>
+              <p>Net after commission: £<span id="net">0</span></p>
+            </div>
+          </section>
+    </main>
+    <footer class="footer"> 
+        <a href="index.html"><img class="footer-logo" src="assets/icons/logo.svg" /></a>
+        <ul class="footer-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="properties.html">Our Properties</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <ul class="footer-social-links">
+            <li class="footer-social-item"><a class="footer-link" href="instagram.com"><img class="footer-icon" src="assets/icons/instagram.svg" alt="Instagram"></a></li>
+            <li class="footer-social-item"><a class="footer-link" href="facebook.com"><img class="footer-icon" src="assets/icons/facebook.svg" alt="Facebook"></a></li>
+            <li class="footer-social-item"><a class="footer-link" href="twitter.com"><img class="footer-icon" src="assets/icons/twitter.svg" alt="Twitter"></a></li>
+          </ul>
+    </footer>
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.querySelector(".nav-links");
+      
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+        });
+    </script>
+    <script>
+        /*--------CALCULATOR--------*/
+        document.getElementById("calculateBtn").addEventListener("click", function () {
+          const rate = Number(document.getElementById("rate").value);
+          const occupancy = Number(document.getElementById("occupancy").value);
+          const plan = Number(document.querySelector('input[name="plan"]:checked').value);
+      
+          if (!rate || !occupancy) {
+            alert("Please enter all values");
+            return;
+          }
+      
+          const days = 30;
+          const gross = rate * (occupancy / 100) * days;
+          const net = gross * (1 - plan);
+      
+          document.getElementById("gross").textContent = gross.toFixed(0);
+          document.getElementById("net").textContent = net.toFixed(0);
+        });
+      </script>
+
+</body>
+  
+</html>

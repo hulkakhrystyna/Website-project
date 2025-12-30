@@ -1,0 +1,1156 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #0A1428; 
+    line-height: 1.6;
+  }
+h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #0A1428;
+    line-height: 1.2;
+}
+h1 {
+    font-size: 64px;
+    font-weight: 600;
+}
+h2 {
+    font-size: 50px;
+    font-weight: 500;
+}
+h3 {
+    font-size: 35px;
+    font-weight: 300;
+}
+nav a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+}
+button {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+/*----------------------- HOME PAGE ------------------------*/
+
+  /*---- Hero Section -----*/
+.hero {
+    height: 100vh;
+    background: url("assets/images/home/hero.jpg") center/cover no-repeat;
+    position: relative;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 20, 40, 0.45);
+}
+
+/* NAVIGATION */
+.logo {
+    width: 200px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    position: relative;
+}
+.nav-links li {
+    display: inline-block;
+    margin-left: 30px;
+}
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.hamburger {
+    display: none;
+}
+  
+  /* HERO CONTENT */
+.hero-content {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    padding: 100px;
+}
+.hero-label {
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+.hero-title {
+    color: #ffffff;
+    margin: 20px 0;
+}
+.hero-subtitle {
+    color: #ffffff;
+    margin-bottom: 150px;
+}
+  
+  /* BUTTONS */
+.hero-buttons a {
+    font-size: 16px;
+}
+.btn-primary {
+    background: #C6964A;
+    border: 2px solid #C6964A;
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.btn-secondary {
+    border: 2px solid #C6964A;
+    color: #C6964A;
+    padding: 15px 35px;
+    text-decoration: none;
+}
+
+  /*---- WHY ELITESTAY Section ----*/
+  .why-elitestay {
+    padding: 100px 200px;
+    text-align: center;
+  }
+  .underline {
+    width: 300px;
+    align-items: center;
+    background: #C6964A;
+    border: #C6964A;
+    height: 1px;
+  }
+
+  /*---- WHAT MAKES US DIFFERENT Section ----*/
+  .features-section {
+    padding: 50px 8%;
+    background-color: #FBF7F3;
+    text-align: center;
+    align-content: center;
+  }
+  .features-title {
+    margin-bottom: 60px;
+  }
+  .features-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  .feature-icon-wrap {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 24px;
+    border: 2px solid #C6964A;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feature-icon {
+    width: 55px;
+    height: 55px;
+}
+.feature-name {
+    font-size: 25px;
+}
+
+  /*---- AREAS WE SERVE Section ----*/
+  .areas-section {
+    padding: 50px 8%;
+  }
+  .areas-text-container {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .areas-section-title {
+    margin-bottom: 20px;
+  }
+  .areas-text {
+    margin: 40px 0;
+  }
+  .areas-card-container {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 20px;
+  }
+  .areas-card {
+    text-align: center;
+    background-color: #FBF7F3;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+  .area-img {
+    width: 100%;
+  }
+  .area-title {
+    margin: 20px 0;
+  }
+  .area-underline {
+    width: 200px;
+    align-items: center;
+    background: #C6964A;
+    border: #C6964A;
+    height: 1px;
+    margin-bottom: 20px;
+  }
+  
+  /*---- WHAT WE OFFER Section ----*/
+  .offer-section {
+    padding: 50px 8%;
+  }
+  .offer-section-title {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .offer-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  .offer-text {
+    position: relative;
+  }
+  .offer-text h3 {
+    text-align: center;
+  }
+  .offer-link {
+    color: #C6A15B;
+    text-decoration: none;
+    border: 1px solid #C6A15B;
+    padding: 10px 18px;
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+  .offer-img-container {
+    position: relative;
+  }
+  .offer-img {
+    width: 100%;
+  }
+  .offer-underline {
+    width: 200px;
+    background: #C6964A;
+    border: #C6964A;
+    height: 1px;
+    margin-bottom: 20px;
+  }
+  /*---- CTA Section ----*/
+  .CTA-section {
+    padding: 50px 8%;
+    height: 100vh;
+    background: url("assets/images/home/CTA.png") center/cover no-repeat;
+    position: relative;
+    text-align: center;
+    align-content: center;
+}
+.CTA-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 20, 40, 0.45);
+}
+.CTA-title {
+    color: #ffffff;
+    position: relative;
+    margin-bottom: 70px;
+}
+.CTA-link {
+    position: relative;
+    background: #C6964A;
+    border: 2px solid #C6964A;
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+}
+
+/*---- EXAMPLE Section ----*/
+.examples-section {
+    padding: 50px 8%;
+    text-align: center;
+}
+.examples-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px 0;
+}
+.examples-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.examples-link-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.examples-underline {
+    width: 250px;
+    align-items: center;
+    background: #C6964A;
+    border: #C6964A;
+    height: 1px;
+  }
+.examples-link {
+    border: 2px solid #C6964A;
+    color: #C6964A;
+    padding: 15px 35px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+  /*---- FOOTER ----*/
+  .footer {
+    height: 350px;
+    background-color: #0A1428;
+    display: flex;
+    padding: 50px;
+  }
+  .footer-logo {
+    width: 200px;
+  }
+  .footer-nav-links {
+    margin: 0px;
+  }
+  .footer-nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .footer-social-links {
+    right: 50px;
+    position: absolute;
+    display: flex;
+    gap: 15px;
+  }
+  .footer-social-item{
+    width: 40px;
+    height: 40px;
+  }
+  .footer-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #C6964A;
+    border-radius: 50%;
+  }
+  .footer-icon {
+    width: 24px;
+  }
+
+/*---------------- TABLET VERSION ------------------*/
+
+  @media (max-width: 950px) {
+    body {
+        font-size: 17px;
+        font-weight: 300;
+    }
+    h1 {
+        font-size: 54px;
+        font-weight: 500;
+    }
+    h2 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+    h3 {
+        font-size: 28px;
+        font-weight: 400;
+    }
+
+    /*---- Hero Section ----*/
+
+    .nav-links {
+        display: none; /* hide the links */
+        position: absolute;
+        top: 35px;
+        right: 40px;
+        background: rgba(10, 20, 40);
+        padding: 20px;
+        border-radius: 8px;
+        flex-direction: column;
+        z-index: 999;
+    }
+    .nav-links a {
+        display: block;
+        margin: 10px 0;
+    }
+    .hamburger {
+        position: relative;
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+        z-index: 1000;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .hero-content {
+        padding: 50px;
+    }
+    .nav-links {
+        margin: auto;
+    }
+    .hero-buttons a {
+        font-size: 14px;
+    }
+    .btn-primary {
+      padding: 14px 30px;
+    }
+    .btn-secondary {
+        padding: 14px 30px;
+    }
+
+    /*---- Why ELITESTAY Section ----*/
+    .why-elitestay {
+        padding: 50px 8%;
+      }
+
+    /*---- WHAT MAKES US DIFFERENT Section ----*/
+    .features-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+    /*---- AREAS WE SERVE Section ----*/
+    .areas-section {
+        padding: 50px 8%;
+      }
+    .areas-card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+      /*---- WHAT WE OFFER Section ----*/
+      .offer-row {
+        grid-template-columns: 1fr;
+      }
+      .offer-text {
+        order: 2;
+        text-align: center;
+      }
+      .offer-text ul {
+        padding: 0;
+        list-style: none;
+      }
+      .offer-img-container {
+        order: 1;
+      }
+    /*---- EXAMPLE Section ----*/
+    .examples-container {
+       grid-template-columns: repeat(2, 1fr);
+    }
+    .examples-underline {
+        width: 150px;
+      }
+      .examples-link {
+        font-size: 14px;
+        padding: 14px 30px;
+
+    }
+  }
+
+/*---------------- MOBILE VERSION ------------------*/
+
+  @media (max-width: 660px) {
+    body {
+        font-size: 17px;
+        font-weight: 300;
+    }
+    h1 {
+        font-size: 44px;
+        font-weight: 500;
+    }
+    h2 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+    h3 {
+        font-size: 28px;
+        font-weight: 400;
+    }
+
+    /*---- HERO Section ----*/
+    .hero {
+      padding: 0 20px;
+    }
+    .logo {
+        width: 150px;
+    }
+    .hero-label {
+        font-size: 15px;
+    }
+    .hero-subtitle {
+      margin-bottom: 100px;
+    }
+    .hero-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 150px;
+      margin: auto;
+    }
+    .btn-primary {
+        width: 100%;
+        padding: 10px 24px;
+        margin-bottom: 12px;
+        margin-right: 0px;;
+    }
+    .btn-secondary {
+        width: 100%;
+        padding: 10px 24px;
+    }
+
+    /*---- Why ELITESTAY Section ----*/
+    .why-elitestay {
+        padding: 50px 5%;
+      }
+    .underline {
+        width: 150px;
+    }
+
+    /*---- WHAT MAKES US DIFFERENT Section ----*/
+    .features-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /*---- AREAS WE SERVE Section ----*/
+    .areas-card-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 5%;
+    }
+
+    /*---- EXAMPLE Section ----*/
+    .examples-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .examples-underline {
+        width: 100px;
+      }
+    .examples-link {
+        padding: 3%;
+
+    }
+
+
+    /*---- FOOTER ----*/
+      .footer {
+        flex-direction: column;
+        gap: 30px;  
+      }
+      .footer-nav-links {
+        padding: 0;
+      }
+      .footer-social-links {
+        position: relative;
+      }
+  }
+
+     /*----------------------- SERVICES PAGE ------------------------*/
+
+    /*---- HERO Section ----*/
+    .services-hero {
+        height: 100vh;
+        background: url("assets/images/services/services-hero.jpg") center/cover no-repeat;
+        position: relative;
+    }
+    .services-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(10, 20, 40, 0.45);
+    }
+    .services-title {
+        color: #ffffff;
+        position: relative;
+        text-align: center;
+        margin-top: 200px;
+    }
+    /*---- SERVICE PLANS Section ----*/
+    .plans-section {
+        padding: 50px 8%;
+        text-align: center;
+        align-content: center;
+    }
+    .plans-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .standart-card,
+    .premium-card {
+        padding: 6%;
+        background-color: #FBF7F3;
+        border: 1px solid #C6964A;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        height: 550px;
+        width: 330px;
+    }
+    .standart-card {
+        border: 1px solid #0A1428;
+    }
+    .standart-procent,
+    .premium-procent {
+        width: 80px;
+        height: 80px;
+        margin: auto;
+        border: 1px solid #C6964A;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .standart-procent {
+        border: 1px solid #0A1428;
+    }
+    .plan-service {
+        text-align: start;
+        line-height: 2;
+        margin-bottom: 50px;
+    }
+    .standart-link,
+    .premium-link {
+        position: relative;
+        bottom: 15px;
+        font-size: 15px;
+        background: #C6964A;
+        color: white;
+        padding: 13px 30px;
+        text-decoration: none;
+    }
+    .standart-link{
+        background: #0A1428;
+    }
+
+    /*---- HOW IT WORKS Section ----*/
+    .workflow-section {
+        padding: 50px 8%;
+        text-align: center;
+        align-content: center;
+    }
+    .workflow-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .workflow-card {
+        background: #FBF7F3;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        padding: 5%;
+    }
+    .workflow-name-wrap {
+        display: flex;
+        gap: 15px;
+    }
+    .workflow-step {
+        min-width: 65px;
+        height: 65px;
+        color: #ffffff;
+        background-color: #0A1428;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .workflow-name {
+        text-align: start;
+        font-size: 28px;
+        align-content: center;
+        margin: 0;
+    }
+    .workflow-underline {
+        width: 200px;
+        background: #C6964A;
+        border: #C6964A;
+        height: 1px;
+        margin-bottom: 20px;
+      }
+
+    /*---- CALCULATOR Section ----*/
+.calculator-section {
+    padding: 50px 8%;
+    background-color: #FBF7F3;
+    text-align: center;
+  }
+  .calculator-title {
+    margin-bottom: 10px;
+  }
+  .calculator p {
+    margin-bottom: 50px;
+  }
+  .calculator-form {
+    max-width: 520px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    text-align: left;
+  }
+  .calculator-label {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .calculator-input-number {
+    width: 100%;
+    margin-top: 8px;
+    padding: 14px;
+    border: 1px solid #ddd;
+  }
+  
+  .calculator-input-number:focus {
+    outline: none;
+    border-color: #C6964A;
+  }
+  .calculator-button {
+    display: block;
+    width: 300px;
+    padding: 16px;
+    margin: auto;
+    background-color: #C6964A;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .calculator-button:hover {
+    background-color: #b8893f;
+  }
+  
+
+    /*---------------- TABLET VERSION ------------------*/
+
+  @media (max-width: 950px) {
+
+    /*---- SERVICE PLANS Section ----*/
+    .standart-card,
+    .premium-card {
+        padding: 3%;
+    }
+
+    /*---- HOW IT WORKS Section ----*/
+    .workflow-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+  }
+
+  /*---------------- MOBILE VERSION ------------------*/
+
+  @media (max-width: 660px) {
+
+    /*---- SERVICE PLANS Section ----*/
+    .plans-container {
+        display: block;
+    }
+    .standart-card,
+    .premium-card {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    /*---- HOW IT WORKS Section ----*/
+    .workflow-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .standart-card,
+    .premium-card {
+        padding: 3% 0;
+    }
+
+    /*---- CALCULATOR Section ----*/
+    .calculator-button {
+        width: 150px;
+    }
+  }
+
+     /*----------------- OUR PROPERTIES PAGE ---------------------*/
+
+     /*----- HERO Section ----*/
+     .properties-hero {
+        height: 100vh;
+        background: url("assets/images/properties/properties-hero.jpg") center/cover no-repeat;
+        position: relative;
+    }
+    .properties-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(10, 20, 40, 0.55);
+    }
+    .properties-title {
+        color: #ffffff;
+        position: relative;
+        text-align: center;
+        margin-top: 200px;
+    }
+
+     /*---- INTRO Section ----*/
+      .properties-intro {
+        padding: 100px 200px;
+        text-align: center;
+      }
+
+      /*---- GALLERY Section ----*/
+      .image-grid {
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+        gap: 15px;
+        padding: 0 100px 100px 100px;
+      }
+      .image-grid img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      /*---------- TABLET VERSION -----------*/
+
+      @media (max-width: 950px) {
+
+        /*---- INTRO Section ----*/
+        .properties-intro{
+            padding: 50px 8%;
+        }
+
+        /*---- GALLERY Section ----*/
+        .image-grid {
+            grid-template-columns: repeat(2, 1fr);
+            padding: 50px 8%;
+        }
+      }
+
+      /*---------- MOBILE VERSION -----------*/
+      @media (max-width: 660px) {
+        /*---- INTRO Section ----*/
+        .properties-intro{
+            padding: 30px 5%;
+        }
+
+        /*---- GALLERY Section ----*/
+        .properties-gallery {
+            padding: 30px 5%;
+        }
+        .image-grid {
+            padding: 0;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+        }
+      }
+
+
+     /*----------------------- ABOUT US PAGE ------------------------*/
+
+     /*---- HERO Section ----*/
+     .about-hero {
+        height: 100vh;
+        background: url("assets/images/about/about-hero.jpg") center/cover no-repeat;
+        position: relative;
+    }
+    .about-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(10, 20, 40, 0.55);
+    }
+    .about-title {
+        color: #ffffff;
+        position: relative;
+        text-align: center;
+        margin-top: 200px;
+    }
+
+    /*---- OUR STORY Section ----*/
+    .story-section {
+        display: flex;
+        gap: 100px;
+        text-align: center;
+        padding: 100px;
+    }
+    .story-container {
+        margin: auto;
+    }
+
+    /*---- VALUES Section ----*/
+    .values-section {
+        padding: 100px;
+    }
+    .values-container {
+        margin: 0px auto;
+        text-align: center;
+    }
+    .values-title {
+        margin: 0 0 60px 0;
+    }
+    .values-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+      }
+    .value-card {
+        padding: 30px 20px;
+        background-color: #FBF7F3;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+    .value-icon-wrap {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 24px;
+        border: 2px solid #C6964A;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .value-icon {
+        width: 48px;
+        height: 48px;
+    }
+    .value-heading {
+        margin: auto;
+    }
+
+    /*---- WHY WE DO IT Section ----*/
+    .why-do-section {
+        display: flex;
+        gap: 100px;
+        text-align: center;
+        padding: 100px;
+    }
+    .wrap-why-img {
+        align-content: center;
+    }
+    .why-do-img {
+        width: 400px;
+    }
+
+     /*---- CONTACT BUTTON Section ----*/
+    .btn-contact-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .btn-underline {
+        width: 320px;
+        align-items: center;
+        background: #C6964A;
+        border: #C6964A;
+        height: 1px;
+      }
+      .btn-contact {
+        border: 2px solid #C6964A;
+        color: #C6964A;
+        padding: 15px 35px;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+      /*---------- TABLET VERSION -----------*/
+
+      @media (max-width: 950px) {
+    /*---- OUR STORY Section ----*/
+    .story-section {
+        gap: 60px;
+        text-align: center;
+        padding: 50px 8%;
+    }
+    .story-img {
+        width: 250px;
+    }
+
+    /*---- VALUES Section ----*/
+    .values-section {
+        padding: 50px 8%;
+    }
+
+    /*---- WHY WE DO IT Section ----*/
+    .why-do-section {
+        padding: 50px 8%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /*---- CONTACT BUTTON Section ----*/
+    .btn-underline {
+        width: 180px;
+      }
+      .btn-contact {
+        font-size: 14px;
+        padding: 14px 30px;
+
+    }
+
+    }
+      /*---------- MOBILE VERSION -----------*/
+      @media (max-width: 660px) {
+      /*---- OUR STORY Section ----*/
+        .story-section {
+            padding: 30px 5%;
+        }
+        .story-img {
+            display: none;
+        }
+
+       /*---- VALUES Section ----*/
+       .values-section {
+        padding: 30px 5%;
+       }
+       .values-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+      }
+
+      /*---- WHY WE DO IT Section ----*/
+      .why-do-section {
+        padding: 30px 5%;
+      }
+    
+        /*---- CONTACT BUTTON Section ----*/
+        .btn-underline {
+            width: 100px;
+          }
+          .btn-contact {
+            padding: 12px 28px;
+    
+        }
+      }
+
+     /*---------- CONTACT US PAGE ---------*/
+
+
+     /*----- HERO Section ----*/
+     .contact-hero {
+        height: 100vh;
+        background: url("assets/images/contact/contact-hero.jpg") center/cover no-repeat;
+        position: relative;
+    }
+    .contact-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(10, 20, 40, 0.55);
+    }
+    .contact-title {
+        color: #ffffff;
+        position: relative;
+        text-align: center;
+        margin-top: 200px;
+    }
+
+    /*----- CONNECT WITH US Section ----*/
+    .connect-section{
+        padding: 50px 8%;
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+    }
+    .connect-section-title {
+        padding: 20px;
+        text-align: center;
+    }
+    .connect-section iframe {
+        margin: auto 0;
+        width: 500px;
+        height: 380px;
+    }
+    .connect-container{
+        margin: auto;
+    }
+    .connect-list {
+        list-style: none;
+    }
+    .connect-list-item {
+        display: flex;
+        gap: 15px;
+    }
+    .connect-list-item img{
+        width: 30px;
+        height: 30px;
+        margin: auto 0;
+    }
+
+    /*----- GET IN TOUCH Section ----*/
+    .contact-section {
+        padding: 50px 8%;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        background: #FBF7F3;
+    }
+    .contact-text-container {
+        margin-right: 30px;
+    }
+    .contact-form-container {
+        border: 1px solid #C6964A;
+        padding: 5%;
+        min-width: 250px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+    .form-container {
+        margin-bottom: 15px;
+    }
+    .form-input {
+        margin-top: 10px;
+        width: 100%;
+        height: 40px;
+        border: 1px solid #C6964A;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+    .form-input.comment {
+        height: 80px;
+    }
+    .privacy-container {
+        margin-bottom: 20px;
+    }
+    .privacy-checkbox {
+        width: 16px;
+        height: 16px;
+    }
+    .privacy-label {
+        font-size: 16px;
+    }
+    .send-btn {
+        display: block;
+        margin: auto;
+        border: 1px solid #C6964A;
+        background-color: #C6964A;
+        color: #ffffff;
+        padding: 15px 50px;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    .send-btn:hover,
+    .send-btn:focus {
+       background-color: #C6A15B;
+}
+
+
+    /*---------- MOBILE VERSION -----------*/
+    @media (max-width: 660px) {
+
+        /*----- CONNECT WITH US Section ----*/
+        .connect-section{
+            padding: 30px 5%;
+            display: grid;
+        }
+        .connect-container {
+            order: 1;
+        }
+        .connect-section iframe {
+            width: 300px;
+            margin: auto;
+            order: 2;
+        }
+
+        /*----- GET IN TOUCH Section ----*/
+        .contact-section {
+            padding: 30px 5%;
+            display: block;
+        }
+    }
+    
