@@ -9,10 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
     <header class="services-hero">
+
+        <!------ Navigation Bar ------>
         <nav class="navbar">
-            <a href="index.html"><img class="logo" src="assets/icons/logo.svg" /></a>
+            <a href="index.html"><img class="logo" src="assets/icons/logo.svg" alt="EliteStay London logo"/></a>
             <ul class="nav-links">
               <li><a href="index.html">Home</a></li>
               <li><a href="services.html">Services</a></li>
@@ -23,10 +27,15 @@
             <div class="hamburger" id="hamburger">
               &#9776;
             </div>
-          </nav>
+        </nav>
+
+        <!------ Hero Section ------>
             <h1 class="services-title">Services</h1>
     </header>
+
     <main>
+
+        <!------ Service Plans Section ------>
         <section class="plans-section">
             <h2 class="plans-section-title">Our Servive Plans</h2>
             <div class="plans-container">
@@ -59,6 +68,8 @@
                 </div>
             </div>
         </section>
+
+        <!------ How It Works Section ------>
         <section class="workflow-section">
             <h2>How it Works</h2>
             <div class="workflow-container">
@@ -104,6 +115,8 @@
                 </div>
             </div>
         </section>
+
+        <!------ Calculator Section ------>
         <section class="calculator-section" id="calculator">
             <h2 class="calculator-title">Earnings Calculator</h2>
             <p>Estimate your potential monthly income</p>
@@ -132,9 +145,12 @@
               <p>Net after commission: £<span id="net">0</span></p>
             </div>
           </section>
+
     </main>
+
+    <!------ Footer ------>
     <footer class="footer"> 
-        <a href="index.html"><img class="footer-logo" src="assets/icons/logo.svg" /></a>
+        <a href="index.html"><img class="footer-logo" src="assets/icons/logo.svg" alt="EliteStay London logo"/></a>
         <ul class="footer-nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
@@ -143,11 +159,28 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
           <ul class="footer-social-links">
-            <li class="footer-social-item"><a class="footer-link" href="instagram.com"><img class="footer-icon" src="assets/icons/instagram.svg" alt="Instagram"></a></li>
-            <li class="footer-social-item"><a class="footer-link" href="facebook.com"><img class="footer-icon" src="assets/icons/facebook.svg" alt="Facebook"></a></li>
-            <li class="footer-social-item"><a class="footer-link" href="twitter.com"><img class="footer-icon" src="assets/icons/twitter.svg" alt="Twitter"></a></li>
+            <li class="footer-social-item">
+                <a class="footer-link" href="instagram.com">
+                    <!-- Icon source: Freeicons.io -->
+                    <img class="footer-icon" src="assets/icons/instagram.svg" alt="Instagram icon">
+                </a>
+            </li>
+            <li class="footer-social-item">
+                <a class="footer-link" href="facebook.com">
+                    <!-- Icon source: Freeicons.io -->
+                    <img class="footer-icon" src="assets/icons/facebook.svg" alt="Facebook icon">
+                </a>
+            </li>
+            <li class="footer-social-item">
+                <a class="footer-link" href="twitter.com">
+                    <!-- Icon source: Freeicons.io -->
+                    <img class="footer-icon" src="assets/icons/twitter.svg" alt="Twitter icon">
+                </a>
+            </li>
           </ul>
     </footer>
+
+    <!------ Menu Button ------>
     <script>
         const hamburger = document.getElementById("hamburger");
         const navLinks = document.querySelector(".nav-links");
@@ -156,8 +189,9 @@
           navLinks.classList.toggle("active");
         });
     </script>
+
+    <!-------- Calculator -------->
     <script>
-        /*--------CALCULATOR--------*/
         document.getElementById("calculateBtn").addEventListener("click", function () {
           const rate = Number(document.getElementById("rate").value);
           const occupancy = Number(document.getElementById("occupancy").value);
@@ -176,7 +210,6 @@
           document.getElementById("net").textContent = net.toFixed(0);
         });
       </script>
-
+      
 </body>
-  
 </html>

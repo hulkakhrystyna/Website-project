@@ -9,10 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
     <header class="properties-hero">
+
+        <!------ Navigation Bar ------>
         <nav class="navbar">
-            <a href="index.html"><img class="logo" src="assets/icons/logo.svg" /></a>
+            <a href="index.html"><img class="logo" src="assets/icons/logo.svg" alt="EliteStay London logo"/></a>
             <ul class="nav-links">
               <li><a href="index.html">Home</a></li>
               <li><a href="services.html">Services</a></li>
@@ -23,31 +27,48 @@
             <div class="hamburger" id="hamburger">
               &#9776;
             </div>
-          </nav>
+        </nav>
+
+        <!------ Hero Section ------>
             <h1 class="properties-title">Our Properties</h1>
     </header>
 
     <main>
+
+        <!------ Intro Section ------>
         <section class="properties-intro">
             <p class="properties-text">These interiors reflect the style, comfort, and quality that EliteStay provides across all managed properties. Every home is professionally prepared for guests and designed for a premium stay.</p>
         </section>
+
+        <!------ Properties Gallery Section ------>
         <section class="properties-gallery">
             <div class="image-grid">
-                <img src="assets/images/properties/img-1.png" alt="">
-                <img src="assets/images/properties/img-2.png" alt="">
-                <img src="assets/images/properties/img-3.png" alt="">
-                <img src="assets/images/properties/img-4.png" alt="">
-                <img src="assets/images/properties/img-5.png" alt="">
-                <img src="assets/images/properties/img-6.png" alt="">
-                <img src="assets/images/properties/img-7.png" alt="">
-                <img src="assets/images/properties/img-8.png" alt="">
-                <img src="assets/images/properties/img-9.png" alt="">
+                <!-- Image source: Unsplash -->
+                <img src="assets/images/properties/img-1.png" alt="Elegant bedroom in a managed short-let property in Mayfair">
+                <!-- Image source: Unsplash -->
+                <img src="assets/images/properties/img-2.png" alt="Bright kitchen area in a central London short-term rental">
+                <!-- Image source: Unsplash -->
+                <img src="assets/images/properties/img-3.png" alt="Open-plan living space in a professionally managed London property">
+                <!-- Image source: Unsplash -->
+                <img src="assets/images/properties/img-4.png" alt="High-quality furnished apartment for short-term rental in London">
+                <!-- Image source: Unsplash -->
+                <img src="assets/images/properties/img-5.png" alt="Modern short-let apartment living room in Marylebone, London">
+                <!-- Image source: Unsplash -->
+                <img src="assets/images/properties/img-6.png" alt="Well-lit living area in an EliteStay managed property">
+                <!-- Image source: Unsplash -->
+                <img src="assets/images/properties/img-7.png" alt="Contemporary interior of a serviced apartment in central London">
+                <!-- Image source: Unsplash -->
+                <img src="assets/images/properties/img-8.png" alt="Comfortable apartment prepared for short-term stays">
+                <!-- Image source: Unsplash -->
+                <img src="assets/images/properties/img-9.png" alt="Stylish living room in a premium short-let apartment in Paddington">
             </div>
         </section>
+        
     </main>
 
+    <!------ Footer ------>
     <footer class="footer"> 
-        <a href="index.html"><img class="footer-logo" src="assets/icons/logo.svg" /></a>
+        <a href="index.html"><img class="footer-logo" src="assets/icons/logo.svg" alt="EliteStay London logo" /></a>
         <ul class="footer-nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
@@ -56,19 +77,36 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
           <ul class="footer-social-links">
-            <li class="footer-social-item"><a class="footer-link" href="instagram.com"><img class="footer-icon" src="assets/icons/instagram.svg" alt="Instagram"></a></li>
-            <li class="footer-social-item"><a class="footer-link" href="facebook.com"><img class="footer-icon" src="assets/icons/facebook.svg" alt="Facebook"></a></li>
-            <li class="footer-social-item"><a class="footer-link" href="twitter.com"><img class="footer-icon" src="assets/icons/twitter.svg" alt="Twitter"></a></li>
+            <li class="footer-social-item">
+                <a class="footer-link" href="instagram.com">
+                    <!-- Icon source: Freeicons.io -->
+                    <img class="footer-icon" src="assets/icons/instagram.svg" alt="Instagram icon">
+                </a>
+            </li>
+            <li class="footer-social-item">
+                <a class="footer-link" href="facebook.com">
+                    <!-- Icon source: Freeicons.io -->
+                    <img class="footer-icon" src="assets/icons/facebook.svg" alt="Facebook icon">
+                </a>
+            </li>
+            <li class="footer-social-item">
+                <a class="footer-link" href="twitter.com">
+                    <!-- Icon source: Freeicons.io -->
+                    <img class="footer-icon" src="assets/icons/twitter.svg" alt="Twitter icon">
+                </a>
+            </li>
           </ul>
     </footer>
 
+    <!------ Menu Button ------>
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.querySelector(".nav-links");
+      
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+        });
+      </script>
+
 </body>
-<script>
-    const hamburger = document.getElementById("hamburger");
-    const navLinks = document.querySelector(".nav-links");
-  
-    hamburger.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
-  </script>
 </html>

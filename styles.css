@@ -1,14 +1,15 @@
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
-    font-weight: 300;
-    color: #0A1428; 
+    font-weight: 350;
+    color:black; 
     line-height: 1.6;
+    letter-spacing: 0.5px;
     margin: 0;
   }
 h1, h2, h3, h4 {
     font-family: 'Cormorant Garamond', serif;
-    color: #0A1428;
+    color: black;
     line-height: 1.2;
 }
 h1 {
@@ -16,6 +17,7 @@ h1 {
     font-weight: 600;
 }
 h2 {
+    color: #0A1428;
     font-size: 48px;
     font-weight: 500;
 }
@@ -23,27 +25,26 @@ h3 {
     font-size: 35px;
     font-weight: 300;
 }
-nav a {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 200;
-    letter-spacing: 0.5px;
-    color: #ffffff;
-    text-decoration: none;
-}
 a {
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
+    font-weight: 450;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    text-decoration: none;
 }
 button {
     font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    letter-spacing: 0.5px;
+    font-size: 16px;
+    font-weight: 450;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     display: block;
     padding: 15px 45px;
     margin: auto;
     background-color: #C6964A;
     border: 1px solid #C6964A;
-    color: #ffffff;
+    color: #000000;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -53,12 +54,10 @@ button:focus {
    border: 2px solid #b8893f;
 }
 .link {
-    font-size: 17px;
-    padding: 15px 35px;
     background: #C6964A;
     border: 1px solid #C6964A;
-    color: white;
-    text-decoration: none;
+    color: black;
+    padding: 15px 35px;
     transition: all 0.3s ease;
 }
 .link:hover,
@@ -67,17 +66,16 @@ button:focus {
    border: 2px solid #b8893f;
 }
 .link-border {
-    font-size: 17px;
     padding: 15px 35px;
     border: 1px solid #C6964A;
-    color: #C6964A;
-    text-decoration: none;
+    color: #b8893f;
     transition: all 0.3s ease;
 }
 .link-border:hover,
 .link-border:focus {
-    border: 2px solid #b8893f;
-    color: #b8893f;
+    background: #C6964A;
+    border: 2px solid #C6964A;
+    color: black;
 }
 
 /*----------------------- HOME PAGE ------------------------*/
@@ -85,6 +83,7 @@ button:focus {
   /*---- Hero Section -----*/
 .hero {
     height: 100vh;
+    /*-- Image source: Unsplash --*/
     background: url("assets/images/home/hero.jpg") center/cover no-repeat;
     position: relative;
 }
@@ -109,6 +108,13 @@ button:focus {
 .nav-links li {
     display: inline-block;
     margin-left: 30px;
+}
+nav a {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 300;
+    color: #ffffff;
+    transition: all 0.3s ease;
 }
 .hamburger {
     display: none;
@@ -268,6 +274,7 @@ button:focus {
   .CTA-section {
     padding: 50px 8%;
     height: 100vh;
+    /*-- Image source: Unsplash --*/
     background: url("assets/images/home/CTA.png") center/cover no-repeat;
     position: relative;
     text-align: center;
@@ -326,17 +333,22 @@ button:focus {
     width: 200px;
   }
   .footer-nav-links {
+    list-style: none;
+    line-height: 2;
     margin: 0px;
   }
   .footer-nav-links a {
+    text-transform: capitalize;
+    font-weight: 300;
     color: #ffffff;
-    text-decoration: none;
+    transition: all 0.3s ease;
   }
   .footer-social-links {
     right: 50px;
     position: absolute;
     display: flex;
     gap: 15px;
+    list-style: none;
   }
   .footer-social-item{
     width: 40px;
@@ -350,6 +362,11 @@ button:focus {
     height: 100%;
     background-color: #C6964A;
     border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  .footer-link:hover,
+  .footer-link:focus {
+    background-color: #b8893f;
   }
   .footer-icon {
     width: 24px;
@@ -360,7 +377,6 @@ button:focus {
   @media (max-width: 1023px) {
     body {
         font-size: 16px;
-        font-weight: 300;
     }
     h1 {
         font-size: 50px;
@@ -374,15 +390,9 @@ button:focus {
         font-size: 28px;
         font-weight: 400;
     }
-    button {
-        font-size: 16px;
-    }
-    .link {
-        font-size: 15px;
-        padding: 13px 30px;
-    }
+    button,
+    .link,
     .link-border {
-        font-size: 15px;
         padding: 13px 30px;
     }
 
@@ -471,7 +481,6 @@ button:focus {
   @media (max-width: 767px) {
     body {
         font-size: 15px;
-        font-weight: 300;
     }
     h1 {
         font-size: 40px;
@@ -485,15 +494,10 @@ button:focus {
         font-size: 28px;
         font-weight: 400;
     }
-    button {
-        font-size: 15px;
-    }
-    .link {
-        font-size: 13px;
-        padding: 11px 26px;
-    }
+    button,
+    .link,
     .link-border {
-        font-size: 13px;
+        font-size: 15px;
         padding: 11px 26px;
     }
 
@@ -535,6 +539,7 @@ button:focus {
 
     /*---- CTA Section ----*/
     .CTA-section {
+        /*-- Image source: Unsplash --*/
         background: url("assets/images/home/CTA-mobile.png") center/cover no-repeat;
     }
 
@@ -568,6 +573,7 @@ button:focus {
     /*---- HERO Section ----*/
     .services-hero {
         height: 100vh;
+        /*-- Image source: Unsplash --*/
         background: url("assets/images/services/services-hero.jpg") center/cover no-repeat;
         position: relative;
     }
@@ -630,6 +636,7 @@ button:focus {
     .standart-link{
         border: #0A1428;
         background: #0A1428;
+        color: #ffffff;
     }
     .standart-link:hover,
     .standart-link:focus {
@@ -713,6 +720,7 @@ button:focus {
     margin-top: 8px;
     padding: 14px;
     border: 1px solid #ddd;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   }
   
   .calculator-input-number:focus {
@@ -768,6 +776,7 @@ button:focus {
      /*----- HERO Section ----*/
      .properties-hero {
         height: 100vh;
+        /*-- Image source: Unsplash --*/
         background: url("assets/images/properties/properties-hero.jpg") center/cover no-repeat;
         position: relative;
     }
@@ -791,11 +800,13 @@ button:focus {
       }
 
       /*---- GALLERY Section ----*/
+      .properties-gallery {
+        padding: 50px 8%;
+      }
       .image-grid {
         display: grid;
         grid-template-columns:repeat(3, 1fr);
         gap: 15px;
-        padding: 0 100px 100px 100px;
       }
       .image-grid img {
         width: 100%;
@@ -815,23 +826,14 @@ button:focus {
         /*---- GALLERY Section ----*/
         .image-grid {
             grid-template-columns: repeat(2, 1fr);
-            padding: 50px 8%;
         }
       }
 
       /*---------- MOBILE VERSION -----------*/
       @media (max-width: 767px) {
-        /*---- INTRO Section ----*/
-        .properties-intro{
-            padding: 30px 5%;
-        }
 
         /*---- GALLERY Section ----*/
-        .properties-gallery {
-            padding: 30px 5%;
-        }
         .image-grid {
-            padding: 0;
             grid-template-columns: repeat(1, 1fr);
             gap: 20px;
         }
@@ -843,6 +845,7 @@ button:focus {
      /*---- HERO Section ----*/
      .about-hero {
         height: 100vh;
+        /*-- Image source: Unsplash --*/
         background: url("assets/images/about/about-hero.jpg") center/cover no-repeat;
         position: relative;
     }
@@ -864,7 +867,7 @@ button:focus {
         display: flex;
         gap: 100px;
         text-align: center;
-        padding: 100px;
+        padding: 50px 8%;
     }
     .story-container {
         margin: auto;
@@ -872,7 +875,7 @@ button:focus {
 
     /*---- VALUES Section ----*/
     .values-section {
-        padding: 100px;
+        padding: 50px 8%;
     }
     .values-container {
         margin: 0px auto;
@@ -946,21 +949,12 @@ button:focus {
     .story-section {
         gap: 60px;
         text-align: center;
-        padding: 50px 5%;
     }
     .story-img {
         width: 250px;
     }
 
-    /*---- VALUES Section ----*/
-    .values-section {
-        padding: 50px 5%;
-    }
-
     /*---- WHY WE DO IT Section ----*/
-    .why-do-section {
-        padding: 50px 5%;
-    }
     .why-do-container {
         flex-direction: column;
         gap: 20px;
@@ -974,26 +968,17 @@ button:focus {
       /*---------- MOBILE VERSION -----------*/
       @media (max-width: 767px) {
       /*---- OUR STORY Section ----*/
-        .story-section {
-            padding: 30px 5%;
-        }
         .story-img {
             display: none;
         }
 
        /*---- VALUES Section ----*/
-       .values-section {
-        padding: 30px 5%;
-       }
        .values-grid {
         grid-template-columns: repeat(1, 1fr);
         gap: 40px;
       }
 
       /*---- WHY WE DO IT Section ----*/
-      .why-do-section {
-        padding: 30px 5%;
-      }
       .why-do-img {
         width: 100%;
       }
@@ -1008,6 +993,7 @@ button:focus {
      /*----- HERO Section ----*/
      .contact-hero {
         height: 100vh;
+        /*-- Image source: Unsplash --*/
         background: url("assets/images/contact/contact-hero.jpg") center/cover no-repeat;
         position: relative;
     }
@@ -1038,9 +1024,11 @@ button:focus {
     .map-container {
         margin: auto 0;
         width: 500px;
+        height: 400px;
     }
     .map-container iframe {
         width: 100%;
+        height: 100%;
     }
     .connect-container{
         margin: auto;
@@ -1075,18 +1063,21 @@ button:focus {
         min-width: 250px;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     }
-    .form-container {
+    .form-label {
+        display: flex;
+        flex-direction: column;
         margin-bottom: 15px;
     }
     .form-input {
         margin-top: 10px;
-        width: 100%;
-        height: 40px;
-        border: 1px solid #C6964A;
+        width: 85%;
+        padding: 14px;
+        border: 1px solid #ddd;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     }
-    .form-input.comment {
-        height: 80px;
+    .form-input:focus {
+        outline: none;
+        border-color: #C6964A;
     }
     .privacy-container {
         margin-bottom: 20px;
@@ -1098,6 +1089,12 @@ button:focus {
     .privacy-label {
         font-size: 16px;
     }
+    .form-link {
+        font-size: 16px;
+        font-weight: 350;
+        text-transform: capitalize;
+        letter-spacing: 0.5px;
+    }
 
 
     /*---------- MOBILE VERSION -----------*/
@@ -1105,7 +1102,6 @@ button:focus {
 
         /*----- CONNECT WITH US Section ----*/
         .connect-section{
-            padding: 30px 5%;
             flex-direction: column;
         }
         .connect-container {
@@ -1119,8 +1115,6 @@ button:focus {
 
         /*----- GET IN TOUCH Section ----*/
         .contact-section {
-            padding: 30px 5%;
             display: block;
         }
-    }
-    
+    } 

@@ -1,29 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Creator: CorelDRAW -->
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="7.11111in" height="7.11111in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 7111 7111"
- xmlns:xlink="http://www.w3.org/1999/xlink">
- <defs>
-  <style type="text/css">
-   <![CDATA[
-    .str0 {stroke:black;stroke-width:250;stroke-linecap:round;stroke-linejoin:round}
-    .fil0 {fill:none}
-    .fil1 {fill:none;fill-rule:nonzero}
-   ]]>
-  </style>
- </defs>
- <g id="Layer_x0020_1">
-  <metadata id="CorelCorpID_0Corel-Layer"/>
-  <line class="fil0 str0" x1="213" y1="6986" x2="6898" y2= "6986" />
-  <rect class="fil0 str0" x="699" y="5689" width="910" height="1297"/>
-  <rect class="fil0 str0" x="2300" y="4948" width="910" height="2038"/>
-  <rect class="fil0 str0" x="3901" y="6141" width="910" height="845"/>
-  <rect class="fil0 str0" x="5502" y="3755" width="910" height="3231"/>
-  <polyline class="fil0 str0" points="1154,4864 2755,4123 3878,4657 4355,5616 4923,3461 5957,2930 "/>
-  <path class="fil0 str0" d="M3849 817l-586 0 0 586 586 0m-293 769l0 -183m-293 0l586 0 0 -586m-293 -768l0 182"/>
-  <circle class="fil0 str0" cx="3556" cy="1403" r="1278"/>
-  <path class="fil1 str0" d="M213 1644l801 0 0 367 802 -734 -802 -734 0 367 -801 0 0 734zm401 0m400 184m401 -184m0 -734m-401 -184m-400 184m-401 367"/>
-  <path class="fil1 str0" d="M6898 1644l-801 0 0 367 -802 -734 802 -734 0 367 801 0 0 734zm-401 0m-400 184m-401 -184m0 -734m401 -184m400 184m401 367"/>
- </g>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 512 512">
+  <!-- Generator: Adobe Illustrator 30.0.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 123)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 15px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_x5F_1">
+    <line class="st0" x1="15.34" y1="503" x2="496.66" y2="503"/>
+    <rect class="st0" x="50.33" y="409.61" width="65.52" height="93.39"/>
+    <rect class="st0" x="165.6" y="356.26" width="65.52" height="146.74"/>
+    <rect class="st0" x="280.88" y="442.16" width="65.52" height="60.84"/>
+    <rect class="st0" x="396.15" y="270.36" width="65.52" height="232.64"/>
+    <polyline class="st0" points="83.09 350.21 198.36 296.86 279.22 335.31 313.56 404.36 354.46 249.2 428.91 210.96"/>
+    <path class="st0" d="M277.13,58.82h-42.19v42.19h42.19M256.04,156.39v-13.18M234.94,143.21h42.19v-42.19M256.04,45.72v13.1"/>
+    <circle class="st0" cx="256.04" cy="101.02" r="92.02"/>
+    <path class="st0" d="M15.34,118.37h57.67v26.42l57.74-52.85-57.74-52.85v26.42H15.34v52.85h0Z"/>
+    <path class="st0" d="M496.66,118.37h-57.67v26.42l-57.74-52.85,57.74-52.85v26.42h57.67v52.85h0Z"/>
+  </g>
 </svg>
